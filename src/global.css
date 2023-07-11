@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* scrolls configs */
+
+.scroll--block {
+  @apply overflow-hidden
+}
+
+.scroll::-webkit-scrollbar {
+  @apply appearance-none
+}
+
+.scroll::-webkit-scrollbar:vertical {
+  @apply w-[2px];
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  @apply bg-violet-50/50 rounded-full border border-violet-50;
+}
+
+.scroll::-webkit-scrollbar-track {
+  @apply rounded-full border bg-violet-50/10;
+}
