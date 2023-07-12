@@ -77,7 +77,7 @@ export function Sidebar() {
           openSide
             ? 'left-0 translate-x-0 visible opacity-100'
             : '-left-full -translate-x-3 invisible opacity-0'
-        } fixed w-11/12 rounded-r-3xl p-8 shadow-xl bg-gradient-to-bl from-sky-500 to-sky-800 top-6 bottom-6 flex flex-col items-start justify-center transition-all duration-500 sm:overflow-auto sm:justify-start sm:w-4/6 md:top-10 md:bottom-10 xl:bg-transparent xl:relative xl:top-auto xl:left-auto xl:bottom-auto xl:from-slate-900 xl:to-slate-900 xl:rounded-none xl:w-full xl:visible xl:opacity-100 xl:translate-x-0 xl:pt-0 xl:flex-1`}
+        } fixed w-11/12 rounded-r-3xl p-8 shadow-xl bg-gradient-to-bl from-sky-500 to-sky-800 top-6 bottom-6 flex flex-col items-start justify-center transition-all duration-500 sm:overflow-auto z-30 sm:justify-start sm:w-4/6 md:top-10 md:bottom-10 xl:bg-transparent xl:relative xl:top-auto xl:left-auto xl:bottom-auto xl:from-slate-900 xl:to-slate-900 xl:rounded-none xl:w-full xl:visible xl:opacity-100 xl:translate-x-0 xl:pt-0 xl:flex-1`}
       >
         <button
           className='w-10 h-10 flex items-center justify-center bg-sky-50/30 text-sky-50 rounded-lg absolute top-8 right-8 xl:hidden'
