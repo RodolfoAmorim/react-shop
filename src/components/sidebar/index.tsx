@@ -66,7 +66,7 @@ export function Sidebar() {
       </span>
 
       <button
-        className='w-8 h-3 absolute top-6 left-6 xl:hidden'
+        className='w-8 h-3 absolute top-6 left-6 z-20 text-slate-300 xl:hidden'
         onClick={handleOpenSidebar}
       >
         <Menu strokeWidth={1.25} size={32} />
