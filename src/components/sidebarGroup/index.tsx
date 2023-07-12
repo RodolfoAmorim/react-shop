@@ -9,7 +9,7 @@ export function SidebarGroup({ children, title }: SidebarGroupProps) {
   return (
     <>
       {title && (
-        <strong className='uppercase text-sm font-semibold tracking-widest text-violet-300 leading-relaxed mb-6 block'>
+        <strong className='uppercase text-sm font-semibold tracking-widest text-sky-200 leading-relaxed mb-6 block xl:text-slate-300/50'>
           {title}
         </strong>
       )}

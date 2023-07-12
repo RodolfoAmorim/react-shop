@@ -1,5 +1,5 @@
 <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="88" height="88" rx="44" fill="#ddd6fe"/>
-<path d="M44 46.25C50.2132 46.25 55.25 41.2132 55.25 35C55.25 28.7868 50.2132 23.75 44 23.75C37.7868 23.75 32.75 28.7868 32.75 35C32.75 41.2132 37.7868 46.25 44 46.25Z" stroke="#a78bfa" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M62 64.25C62 59.4761 60.1036 54.8977 56.7279 51.5221C53.3523 48.1464 48.7739 46.25 44 46.25C39.2261 46.25 34.6477 48.1464 31.2721 51.5221C27.8964 54.8977 26 59.4761 26 64.25" stroke="#a78bfa" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect width="88" height="88" rx="44" fill="#bae6fd"/>
+<path d="M44 46.25C50.2132 46.25 55.25 41.2132 55.25 35C55.25 28.7868 50.2132 23.75 44 23.75C37.7868 23.75 32.75 28.7868 32.75 35C32.75 41.2132 37.7868 46.25 44 46.25Z" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62 64.25C62 59.4761 60.1036 54.8977 56.7279 51.5221C53.3523 48.1464 48.7739 46.25 44 46.25C39.2261 46.25 34.6477 48.1464 31.2721 51.5221C27.8964 54.8977 26 59.4761 26 64.25" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

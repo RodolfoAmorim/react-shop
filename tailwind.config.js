@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      boxShadow: {
+        button: '0px 4px 24px 0px rgba(14, 165, 233, 0.2)',
+      },
     },
   },
   plugins: [],
