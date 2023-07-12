@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { SidebarGroup } from '../sidebarGroup'
 import { SidebarLink } from '../sidebarLink'
+import { Avatar } from '../avatar'
 import {
   Menu,
   X,
@@ -86,13 +87,7 @@ export function Sidebar() {
         </button>
 
         <div className='w-full flex items-center justify-start gap-4 xl:hidden'>
-          <img
-            src='/images/users/default.svg'
-            className='w-12 rounded-full outline outline-4 outline-sky-300/50'
-          />
-          <p className='text-lg leading-relaxed tracking-wider font-normal text-sky-50/80'>
-            Login
-          </p>
+          <Avatar />
         </div>
 
         <div className='scroll flex-1 w-full overflow-auto flex flex-col items-start justify-start gap-10 px-4 pb-8 mt-12 sm:flex-none md:flex-1 md:pb-0 xl:flex-1 xl:overflow-auto xl:mt-0'>
