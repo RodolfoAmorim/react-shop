@@ -9,6 +9,9 @@ export default {
       boxShadow: {
         button: '0px 4px 24px 0px rgba(14, 165, 233, 0.2)',
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
     },
   },
   plugins: [],

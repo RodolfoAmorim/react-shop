@@ -1,88 +1,51 @@
-import { Bell, Search, ShoppingBag } from 'lucide-react'
 import { Sidebar } from './components/sidebar'
+import { Header } from './components/header'
+import { ShoppingBag, Star } from 'lucide-react'
 
 import './global.css'
-import { Avatar } from './components/avatar'
-import { useEffect, useRef, useState } from 'react'
 
 export function App() {
-  const [showSearch, setShowSearch] = useState(false)
-  const searchInput = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    function handleClickOutsideSearch(event: MouseEvent) {
-      if (
-        searchInput.current &&
-        !searchInput.current.contains(event.target as Node)
-      ) {
-        setShowSearch(false)
-      }
-    }
-
-    document.addEventListener('mousedown', handleClickOutsideSearch)
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutsideSearch)
-    }
-  }, [searchInput])
-
-  const handleSearch = () => {
-    setShowSearch(!showSearch)
-  }
-
   return (
     <main className='w-full min-h-screen bg-slate-800 text-slate-100 xl:flex xl:gap-10'>
       <Sidebar />
 
       <div className='w-full flex-1'>
-        <header className='inline-flex items-center justify-end gap-6 fixed top-0 right-0 p-6 text-slate-300 z-20'>
-          <div
-            className={`${
-              showSearch
-                ? 'opacity-1 visible translate-y-0 ease-in'
-                : 'opacity-0 invisible -translate-y-2 ease-out'
-            } transition-all duration-300 fixed h-screen top-0 left-0 right-0 z-40 bg-slate-800/20 p-6 backdrop-blur-md`}
-          >
-            <div
-              className='flex items-center justify-start gap-4 bg-slate-700 px-4 rounded-lg'
-              ref={searchInput}
-            >
-              <label htmlFor='search' className='text-slate-400'>
-                <Search strokeWidth={1.25} />
-              </label>
+        <Header />
 
-              <input
-                type='text'
-                id='search'
-                name='search'
-                placeholder='Search...'
-                className='flex-1 outline-none bg-transparent h-14 text-slate-100 placeholder:text-slate-400 text-base leading-relaxed tracking-wide'
-              />
+        <section className='w-full'>
+          <div className='w-full h-full bg-gradient-to-b from-sky-950 to-slate-800 flex flex-col items-center justify-center gap-4 py-10'>
+            <div className='w-72 aspect-square bg-gradient-radial from-sky-200/20 to-50% to-sky-200/0 flex items-center justify-center'>
+              <img src='/images/products/headphone.png' className='w-64' />
+            </div>
+
+            <div className='w-full flex flex-col items-center justify-center gap-6 mt-4 px-6 text-slate-200'>
+              <div className='w-full flex items-center justify-center gap-2'>
+                <Star strokeWidth={1.25} />
+                <Star strokeWidth={1.25} />
+                <Star strokeWidth={1.25} />
+                <Star strokeWidth={1.25} />
+                <Star strokeWidth={1.25} />
+              </div>
+
+              <h1 className='text-center text-3xl leading-tight tracking-wide font-bold'>
+                Headphones
+              </h1>
+
+              <p className='text-center opacity-80 leading-relaxed tracking-wider'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                maiores quibusdam suscipit rerum tenetur ipsa quidem
+              </p>
+
+              <button className='flex items-center justify-center gap-4 bg-sky-500 shadow-button rounded-full text-sky-100 px-6 py-3 tracking-wider leading-tight '>
+                Order Now <ShoppingBag strokeWidth={1.25} />
+              </button>
             </div>
           </div>
+        </section>
 
-          <div className='flex items-center justify-end gap-8'>
-            <span className='hidden'>
-              <Avatar />
-            </span>
-
-            <button className='' onClick={handleSearch}>
-              <Search strokeWidth={1.25} />
-            </button>
-
-            <button className='relative'>
-              <span className='absolute -top-1 -right-1 bg-pink-500 w-2 h-2 text-xs flex items-center justify-center rounded-full leading-none' />
-              <Bell strokeWidth={1.25} />
-            </button>
-
-            <button className='fixed bottom-6 right-6 w-14 h-14 bg-sky-500 flex items-center justify-center rounded-full shadow-button'>
-              <span className='absolute -top-1 -right-1 bg-pink-500 w-6 h-6 text-xs flex items-center justify-center rounded-full leading-none'>
-                2
-              </span>
-              <ShoppingBag strokeWidth={1.25} />
-            </button>
-          </div>
-        </header>
+        <section>
+          <h2>Our Products</h2>
+        </section>
       </div>
     </main>
   )
