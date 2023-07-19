@@ -12,6 +12,9 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
+      dropShadow: {
+        small: '0 10px 8px rgba(14, 165, 233, .2)',
+      },
     },
   },
   plugins: [],
