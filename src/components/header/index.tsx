@@ -31,7 +31,7 @@ export function Header() {
     <header className='flex w-full items-center justify-end gap-6 fixed top-0 right-0 p-6 text-slate-300 z-20 xl:sticky xl:w-full xl:justify-between xl:px-0 bg-slate-800/95'>
       <img
         src='/images/logo-min.svg'
-        className='w-10 h-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-small'
+        className='w-10 h-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-small xl:hidden'
       />
 
       <div
@@ -54,7 +54,7 @@ export function Header() {
             id='search'
             name='search'
             placeholder='Search...'
-            className='flex-1 outline-none bg-transparent h-14 text-slate-100 placeholder:text-slate-400 text-base leading-relaxed tracking-wide'
+            className='flex-1 outline-none bg-transparent h-14 text-slate-100 placeholder:text-slate-400 text-sm font-light leading-relaxed tracking-wider xl:h-10'
           />
         </div>
       </div>
