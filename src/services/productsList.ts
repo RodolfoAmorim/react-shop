@@ -25,14 +25,14 @@ export default {
     },
     {
       id: 2,
-      title: 'Mouse Gamer Redragon Cobra',
+      title: 'Mouse Gamer Redragon Cobra White',
       description: 'RGB, 7 Botões, 10000DPI, Lunar White - M711W',
       price: 137.64,
       discountPercentage: 7,
       rating: 4.1,
       stock: 3,
       category: 'mouse',
-      image: 'Mouse_Gamer_Redragon_Cobra.png',
+      image: 'Mouse_Gamer_Redragon_Cobra_White.png',
     },
     {
       id: 3,
@@ -136,7 +136,7 @@ export default {
       rating: 5,
       stock: 13,
       category: 'headset',
-      image: 'Headset_Gamer_Logitech_G332 .png',
+      image: 'Headset_Gamer_Logitech_G332.png',
     },
   ],
 }

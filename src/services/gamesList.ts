@@ -16,7 +16,7 @@ export default {
       discountPercentage: 27,
       rating: 5,
       category: 'windows',
-      image: 'Mouse_Gamer_Redragon_Cobra.png',
+      image: 'the_last_of_us_part_l.png',
     },
     {
       id: 2,

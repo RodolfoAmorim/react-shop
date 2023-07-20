@@ -1,13 +1,12 @@
 import { Sidebar } from './components/sidebar'
 import { Header } from './components/header'
 import { Banners } from './components/banners'
-import { Product } from './components/product'
 import { CategoryFeatured } from './components/categoryFeatured'
-import { Game } from './components/game'
+import { Products } from './components/products'
 import { Footer } from './components/footer'
 
 import './global.css'
-import { TitleSection } from './components/titleSection'
+import { Games } from './components/games'
 
 export function App() {
   return (
@@ -20,36 +19,14 @@ export function App() {
 
           <Banners />
 
-          <section className='w-full px-6 py-10'>
-            <TitleSection title='Our Products' />
-
-            <div className='w-full my-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:gap-6 2xl:grid-cols-6'>
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-            </div>
-          </section>
+          <Products />
 
           <section className='w-full px-6 py-6 space-y-6 md:grid md:grid-cols-2 md:space-y-0 md:gap-6 2xl:gap-10'>
             <CategoryFeatured />
             <CategoryFeatured />
           </section>
 
-          <section className='w-full px-6 py-10'>
-            <TitleSection title='Our Games' />
-
-            <div className='w-full my-10 grid grid-cols-2 gap-4 md:grid-cols-4 xl:gap-6 2xl:grid-cols-6'>
-              <Game />
-              <Game />
-              <Game />
-              <Game />
-              <Game />
-              <Game />
-            </div>
-          </section>
+          <Games />
         </div>
 
         <Footer />
