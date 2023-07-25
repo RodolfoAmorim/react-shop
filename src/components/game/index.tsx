@@ -1,4 +1,5 @@
 import { PlusCircle } from 'lucide-react'
+import { moneyFormatter } from '../../helpers/moneyFormatter'
 
 interface GameProps {
   image: string
@@ -12,7 +13,7 @@ export function Game({ category, image, title, price }: GameProps) {
     <div className='group space-y-4 xl:hover:cursor-pointer'>
       <div className='relative w-full overflow-hidden rounded-xl border border-slate-900 xl:group-hover:shadow-2xl xl:group-hover:shadow-sky-950/50'>
         <span className='absolute top-2 left-2 text-xs bg-sky-700 px-2 py-1 text-slate-300 rounded-md shadow-lg'>
-          {price}$
+          {moneyFormatter(price)}
         </span>
 
         <img src={`/images/games/${image}`} />

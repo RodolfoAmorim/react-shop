@@ -1,12 +1,12 @@
 import { Sidebar } from './components/sidebar'
 import { Header } from './components/header'
 import { Banners } from './components/banners'
-import { CategoryFeatured } from './components/categoryFeatured'
 import { Products } from './components/products'
 import { Footer } from './components/footer'
+import { Categories } from './components/categories'
+import { Games } from './components/games'
 
 import './global.css'
-import { Games } from './components/games'
 
 export function App() {
   return (
@@ -21,10 +21,7 @@ export function App() {
 
           <Products />
 
-          <section className='w-full px-6 py-6 space-y-6 md:grid md:grid-cols-2 md:space-y-0 md:gap-6 2xl:gap-10'>
-            <CategoryFeatured />
-            <CategoryFeatured />
-          </section>
+          <Categories />
 
           <Games />
         </div>

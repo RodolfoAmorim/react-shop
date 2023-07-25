@@ -1,6 +1,21 @@
 import { ChevronRightCircle } from 'lucide-react'
+import { moneyFormatter } from '../../helpers/moneyFormatter'
 
-export function CategoryFeatured() {
+interface CategoryFeaturedProps {
+  name: string
+  description: string
+  price: number
+  image: string
+  type: string
+}
+
+export function CategoryFeatured({
+  description,
+  image,
+  name,
+  price,
+  type,
+}: CategoryFeaturedProps) {
   return (
     <div className='group w-full border-4 border-slate-600 p-6 rounded-xl flex flex-col items-start justify-between overflow-hidden relative transition-all duration-200 xl:hover:bg-sky-600 xl:hover:border-sky-600'>
       <div className='flex flex-col items-start justify-start gap-2 mb-10 relative z-10 2xl:gap-4'>
@@ -9,16 +24,15 @@ export function CategoryFeatured() {
         </small>
 
         <strong className='text-sky-400 text-lg font-bold tracking-wide xl:group-hover:text-sky-50 2xl:text-2xl'>
-          16,00$
+          {moneyFormatter(price)}
         </strong>
 
         <h3 className='text-2xl font-bold tracking-wide leading-relaxed 2xl:text-4xl'>
-          Omeng Gaming
+          {name}
         </h3>
 
         <p className='text-sm tracking-wide leading-relaxed text-slate-400 xl:group-hover:text-sky-50 2xl:text-base 2xl:max-w-md'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-          laudantium odio sit nostrum temporibus qui labore
+          {description}
         </p>
       </div>
 
@@ -32,11 +46,11 @@ export function CategoryFeatured() {
       </button>
 
       <span className='font-extrabold text-[5rem] uppercase tracking-widest absolute z-0 text-slate-700/80 bottom-2 -left-14 xl:group-hover:text-sky-100/10 2xl:text-[8rem] 2xl:text-slate-700/50'>
-        Mouse
+        {type}
       </span>
 
       <img
-        src='/images/products/mouse_blue.png'
+        src={`/images/products/${image}`}
         className='absolute top-0 bottom-0 -right-1/2 object-cover opacity-20 z-0 2xl:object-contain 2xl:right-0 2xl:translate-x-1/2 2xl:h-full 2xl:opacity-100'
       />
     </div>

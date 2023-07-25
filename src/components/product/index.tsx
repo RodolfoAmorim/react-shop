@@ -1,4 +1,5 @@
 import { PlusCircle } from 'lucide-react'
+import { moneyFormatter } from '../../helpers/moneyFormatter'
 
 interface ProductProps {
   image: string
@@ -23,7 +24,7 @@ export function Product({ category, image, price, title }: ProductProps) {
       </span>
 
       <strong className='text-sky-400 text-lg font-bold tracking-wide 2xl:text-xl'>
-        {price}$
+        {moneyFormatter(price)}
       </strong>
 
       <button className='group flex items-center justify-center gap-2 text-xs font-semibold text-slate-300 uppercase mt-4 transition-colors xl:hover:text-slate-100'>
