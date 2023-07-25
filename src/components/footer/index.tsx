@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className='flex flex-col items-center justify-center gap-10 py-8 bg-slate-950 xl:flex-row xl:justify-between xl:pl-20 xl:pr-32'>
       <img
-        src='/images/logo-white.svg'
+        src='/react-shop/images/logo-white.svg'
         className='w-40 transition-all duration-150 xl:w-32 xl:opacity-70 xl:hover:opacity-100'
       />
 
