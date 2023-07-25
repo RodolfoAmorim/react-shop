@@ -58,7 +58,7 @@ export function Sidebar() {
   return (
     <aside className='xl:w-80 xl:bg-slate-900 xl:pt-12 xl:max-h-screen xl:overflow-y-auto xl:flex xl:flex-col'>
       <span className='hidden xl:block xl:px-8 xl:space-y-8 xl:pb-12 2xl:space-y-14'>
-        <img src='/images/logo.svg' className='xl:w-28 2xl:w-32' />
+        <img src='/react-shop/images/logo.svg' className='xl:w-28 2xl:w-32' />
 
         <button className='bg-sky-600 px-6 py-3 font-sm rounded-full font-medium tracking-wider transition-all shadow-button hover:bg-sky-700 hover:shadow-none 2xl:px-8 2xl:py-4'>
           Go to Catalog
