@@ -16,7 +16,7 @@ export function Game({ category, image, title, price }: GameProps) {
           {moneyFormatter(price)}
         </span>
 
-        <img src={`/images/games/${image}`} />
+        <img src={`./images/games/${image}`} />
       </div>
 
       <div className='flex items-center justify-between gap-2'>
